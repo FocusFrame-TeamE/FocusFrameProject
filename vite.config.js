@@ -45,6 +45,6 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
-    base: '/project_team_e/', // GitHub Pages için önemli!
+    base: '/FocusFrameProject/', // GitHub Pages için önemli!
   };
 });
