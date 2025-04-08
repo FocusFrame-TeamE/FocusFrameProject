@@ -4,10 +4,10 @@
 
 .signup-section {
     padding: 0;
-    margin: 150px 100px;
+    margin: 50px 50px; /* Margin'i küçülttüm */
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* İçeriği ortalayacak şekilde hizaladım */
     height: 100vh;
     background-color: #121212;
 }
@@ -15,32 +15,29 @@
 .signup-container {
     padding: 0;
     margin: 0;
-    display: block;
+    display: flex; /* Flex düzenini kullandım */
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     width: 480px;
-    height: 578px;
+    min-height: 578px; /* Yüksekliği esnek hale getirdim */
     background-color: #121212;
 }
 
-.title-sign {
+.title-sign, .title-up {
     padding: 0;
     margin-bottom: 20px;
     font-size: 48px;
     font-weight: 500;
     line-height: 54px;
     letter-spacing: -4%;
+}
+
+.title-sign {
     color: #fff;
 }
 
 .title-up {
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 54px;
-    letter-spacing: -4%;
     color: #bea69e;
 }
 
@@ -69,8 +66,6 @@
     border-radius: 12px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0px;
     color: #fff;
     opacity: 70%;
 }
@@ -92,8 +87,6 @@
     border-radius: 12px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0px;
     color: #fff;
     opacity: 70%;
 }
@@ -117,9 +110,6 @@
     border-radius: 12px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 28px;
-    paragraph-spacing: 18px;
-    letter-spacing: 0px;
     color: #121212;
     cursor: pointer;
     text-transform: uppercase;
@@ -133,7 +123,6 @@
     line-height: 18px;
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 0.5);
-    vertical-align: middle;
 }
 
 .down-span {
@@ -142,9 +131,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0%;
     color: rgba(255, 255, 255, 0.5);
-    vertical-align: middle;
     text-decoration: underline;
 }
 
@@ -152,7 +139,6 @@
     padding: 0;
     margin-bottom: 38px;
     display: flex;
-    flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
     width: 560px;
@@ -163,8 +149,8 @@
 .signup-camera {
     padding: 0;
     margin-left: 20px;
-    width: 350px;
-    height: 540px;
+    width: 300px; /* Kameranın boyutunu küçülttüm */
+    height: 450px;
     background-color: #1d1d1d;
     border: none;
     border-radius: 1000px;
@@ -181,8 +167,8 @@
 .signup-lens {
     padding: 0;
     margin: 0;
-    width: 190px;
-    height: 288px;
+    width: 160px; /* Lensin boyutunu küçülttüm */
+    height: 250px;
     background-color: #bea69e;
     border: none;
     border-radius: 1000px;
@@ -194,4 +180,28 @@
 .lens-png {
     width: 163px;
     height: 154px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .signup-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .signup-container {
+        width: 100%;
+        min-height: 400px;
+    }
+    .signup-img-container {
+        width: 100%;
+        height: 350px; /* Görsellerin boyutunu küçülttüm */
+    }
+    .signup-camera {
+        width: 250px; /* Kamera boyutunu küçülttüm */
+        height: 350px;
+    }
+    .signup-lens {
+        width: 130px; /* Lens boyutunu küçülttüm */
+        height: 200px;
+    }
 }
