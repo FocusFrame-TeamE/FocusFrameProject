@@ -1,0 +1,198 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+}
+
+.reviews {
+  text-align: none;
+  padding: 20px;
+}
+
+.reviews ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.review-card {
+  background: #121212;
+  padding: 20px;
+  border-radius: 12px;
+  width: 45%;
+  height: 196px;
+  text-align: left;
+  border: 1px solid #444;
+  position: relative;
+}
+
+.review-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.review-card .rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #BEA69E;
+}
+
+.review-content h3 {
+  margin: 10px 0 5px;
+}
+
+.review-content .status {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.review-content .comment {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.review-content .rating {
+  color: #BEA69E;
+}
+
+/* FOOTER KISMI */
+.footer-center a, .footer-site-links a {
+  color: white;  /* Linklerin metnini beyaz yapar */
+  text-decoration: none;  /* Bağlantı alt çizgisini kaldırır */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-center a:hover, .footer-site-links a:hover {
+  color: #fff;  
+}
+
+footer {
+  background: #121212;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-site-links,
+.footer-form {
+  width: 22%; /* Her bölümün genişliği */
+  padding: 15px;
+}
+
+
+.footer-left p, .footer-center ul, .footer-site-links ul, .footer-form form {
+  margin: 5px 0;
+}
+
+.footer-left p, .footer-center a, .footer-site-links a, .footer-form input, .footer-form button {
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+}
+
+.footer-left p, .footer-center ul li, .footer-site-links ul li {
+  text-align: left;
+}
+
+.footer-center {
+  text-align: center;
+  
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.footer-site-links {
+  text-align: left;
+}
+
+.footer-site-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-site-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer input {
+  padding: 10px;
+  width: 216px;
+  height: 60px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer button { 
+  width: 60px;
+  height: 60px;
+  background: #1D1D1D;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+footer button:hover {
+  background: #1D1D1D1D
+}
+
+/* Footer left and right positioning */
+.footer-left p {
+  margin: 20px;
+  text-align: left;  /* Sol tarafta hizalar */
+}
+
+.footer-right {
+  text-align: right;
+  font-size: 14px;
+}
+
+.footer-right p {
+  font-size: 12px;
+  color: white;
+}
+
+.footer-left p a, .footer-right p a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-left p a:hover, .footer-right p a:hover {
+  text-decoration: underline;
+}
