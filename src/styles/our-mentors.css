@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+section{
+    margin-top: 150px;
+}
 .container{
     color: white;
     max-width: 320px;
