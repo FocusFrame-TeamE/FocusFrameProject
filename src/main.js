@@ -1,3 +1,5 @@
+import './styles/styles.css'; // CSS dosyan
+
 document.addEventListener("DOMContentLoaded", () => {
   const loadElements = document.querySelectorAll("load[src]");
 
