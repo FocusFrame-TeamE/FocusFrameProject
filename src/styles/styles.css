@@ -15,8 +15,7 @@
 @import './about-us-section.css';
 @import './back-link.css';
 @import './badges.css';
-@import './animations.css';
-@import './styles.css';           /* eğer bu da genel stiller içeriyorsa */
+@import './animations.css';         /* eğer bu da genel stiller içeriyorsa */
 @import './vite-promo.css';
 
 
